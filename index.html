@@ -1,0 +1,1690 @@
+<!-- index.html  (drop this single file into a folder and publish it on Cloudflare Pages) -->
+
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+&nbsp; <meta charset="utf-8" />
+
+&nbsp; <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+&nbsp; <title>Tec’s Books Bookkeeping | Bookkeeping for small businesses</title>
+
+&nbsp; <meta name="description" content="Monthly bookkeeping, catch-up/cleanup, and QuickBooks support for small businesses. San Diego + remote." />
+
+&nbsp; <meta name="theme-color" content="#111827" />
+
+
+
+&nbsp; <!-- Simple social preview -->
+
+&nbsp; <meta property="og:title" content="Tec’s Books Bookkeeping" />
+
+&nbsp; <meta property="og:description" content="Bookkeeping that keeps you tax-ready every month." />
+
+&nbsp; <meta property="og:type" content="website" />
+
+
+
+&nbsp; <style>
+
+&nbsp;   :root{
+
+&nbsp;     --bg:#0b1220;
+
+&nbsp;     --card:#0f1a30;
+
+&nbsp;     --text:#e5e7eb;
+
+&nbsp;     --muted:#a7b0c0;
+
+&nbsp;     --line:rgba(255,255,255,.10);
+
+&nbsp;     --accent:#5eead4;
+
+&nbsp;     --accent2:#60a5fa;
+
+&nbsp;     --shadow: 0 20px 60px rgba(0,0,0,.35);
+
+&nbsp;     --radius: 18px;
+
+&nbsp;     --max: 1100px;
+
+&nbsp;   }
+
+&nbsp;   \*{box-sizing:border-box}
+
+&nbsp;   html{scroll-behavior:smooth}
+
+&nbsp;   body{
+
+&nbsp;     margin:0;
+
+&nbsp;     font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+
+&nbsp;     color:var(--text);
+
+&nbsp;     background:
+
+&nbsp;       radial-gradient(1000px 600px at 20% -10%, rgba(96,165,250,.25), transparent 60%),
+
+&nbsp;       radial-gradient(900px 600px at 90% 10%, rgba(94,234,212,.22), transparent 55%),
+
+&nbsp;       linear-gradient(180deg, var(--bg), #070b12 70%);
+
+&nbsp;   }
+
+&nbsp;   a{color:inherit}
+
+&nbsp;   .wrap{max-width:var(--max); margin:0 auto; padding:0 20px}
+
+&nbsp;   .nav{
+
+&nbsp;     position:sticky; top:0; z-index:10;
+
+&nbsp;     backdrop-filter:saturate(1.2) blur(10px);
+
+&nbsp;     background:rgba(7,11,18,.65);
+
+&nbsp;     border-bottom:1px solid var(--line);
+
+&nbsp;   }
+
+&nbsp;   .navin{display:flex; align-items:center; justify-content:space-between; gap:14px; padding:12px 0}
+
+&nbsp;   .brand{display:flex; align-items:center; gap:10px; text-decoration:none}
+
+&nbsp;   .logo{
+
+&nbsp;     width:34px; height:34px; border-radius:10px;
+
+&nbsp;     background: linear-gradient(135deg, var(--accent), var(--accent2));
+
+&nbsp;     box-shadow:0 10px 30px rgba(96,165,250,.25);
+
+&nbsp;   }
+
+&nbsp;   .brand strong{letter-spacing:.2px}
+
+&nbsp;   .links{display:flex; gap:14px; flex-wrap:wrap; justify-content:flex-end}
+
+&nbsp;   .links a{opacity:.9; text-decoration:none; padding:8px 10px; border-radius:10px}
+
+&nbsp;   .links a:hover{background:rgba(255,255,255,.06)}
+
+&nbsp;   .btn{
+
+&nbsp;     display:inline-flex; align-items:center; justify-content:center; gap:10px;
+
+&nbsp;     padding:12px 14px; border-radius:12px; border:1px solid var(--line);
+
+&nbsp;     text-decoration:none; cursor:pointer;
+
+&nbsp;     background:rgba(255,255,255,.06);
+
+&nbsp;   }
+
+&nbsp;   .btn.primary{
+
+&nbsp;     background:linear-gradient(135deg, rgba(94,234,212,.18), rgba(96,165,250,.18));
+
+&nbsp;     border-color:rgba(94,234,212,.35);
+
+&nbsp;   }
+
+&nbsp;   .btn.primary:hover{filter:brightness(1.08)}
+
+&nbsp;   .btn:hover{background:rgba(255,255,255,.09)}
+
+&nbsp;   header{padding:60px 0 28px}
+
+&nbsp;   .hero{
+
+&nbsp;     display:grid; gap:18px; align-items:start;
+
+&nbsp;     grid-template-columns: 1.2fr .8fr;
+
+&nbsp;   }
+
+&nbsp;   @media (max-width: 900px){ .hero{grid-template-columns:1fr} header{padding-top:34px}}
+
+&nbsp;   .kicker{color:var(--muted); font-weight:600; letter-spacing:.6px; text-transform:uppercase; font-size:12px}
+
+&nbsp;   h1{margin:0; font-size:44px; line-height:1.05}
+
+&nbsp;   @media (max-width: 520px){ h1{font-size:36px}}
+
+&nbsp;   .sub{color:var(--muted); font-size:18px; margin-top:10px}
+
+&nbsp;   .cta{display:flex; gap:12px; flex-wrap:wrap; margin-top:18px}
+
+&nbsp;   .card{
+
+&nbsp;     background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+
+&nbsp;     border:1px solid var(--line);
+
+&nbsp;     border-radius:var(--radius);
+
+&nbsp;     box-shadow:var(--shadow);
+
+&nbsp;   }
+
+&nbsp;   .stats{padding:18px}
+
+&nbsp;   .statgrid{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+
+&nbsp;   .stat{
+
+&nbsp;     padding:12px; border-radius:14px; border:1px solid var(--line);
+
+&nbsp;     background:rgba(0,0,0,.18)
+
+&nbsp;   }
+
+&nbsp;   .stat b{display:block; font-size:18px}
+
+&nbsp;   .stat span{color:var(--muted); font-size:13px}
+
+&nbsp;   section{padding:28px 0}
+
+&nbsp;   .grid3{display:grid; gap:14px; grid-template-columns: repeat(3, 1fr)}
+
+&nbsp;   @media (max-width: 900px){ .grid3{grid-template-columns:1fr} }
+
+&nbsp;   .tile{padding:18px}
+
+&nbsp;   .tile h3{margin:10px 0 6px}
+
+&nbsp;   .tile p{margin:0; color:var(--muted)}
+
+&nbsp;   .pill{
+
+&nbsp;     display:inline-flex; align-items:center; gap:8px;
+
+&nbsp;     padding:7px 10px; border-radius:999px; font-size:13px;
+
+&nbsp;     border:1px solid var(--line); background:rgba(0,0,0,.18); color:var(--muted)
+
+&nbsp;   }
+
+&nbsp;   .split{display:grid; grid-template-columns: 1fr 1fr; gap:14px}
+
+&nbsp;   @media (max-width: 900px){ .split{grid-template-columns:1fr} }
+
+&nbsp;   .box{padding:18px}
+
+&nbsp;   .box h2{margin:0 0 8px}
+
+&nbsp;   .box p{margin:0 0 10px; color:var(--muted)}
+
+&nbsp;   ul{margin:10px 0 0; padding-left:18px; color:var(--muted)}
+
+&nbsp;   li{margin:6px 0}
+
+&nbsp;   .steps{counter-reset:s}
+
+&nbsp;   .step{padding:18px}
+
+&nbsp;   .step:before{
+
+&nbsp;     counter-increment:s;
+
+&nbsp;     content:counter(s);
+
+&nbsp;     display:inline-flex; align-items:center; justify-content:center;
+
+&nbsp;     width:28px; height:28px; border-radius:10px;
+
+&nbsp;     background:rgba(94,234,212,.18); border:1px solid rgba(94,234,212,.35);
+
+&nbsp;     margin-right:10px; font-weight:700;
+
+&nbsp;   }
+
+&nbsp;   .step h3{display:inline; margin:0}
+
+&nbsp;   .faq details{
+
+&nbsp;     padding:14px 16px; border-radius:14px; border:1px solid var(--line);
+
+&nbsp;     background:rgba(0,0,0,.18)
+
+&nbsp;   }
+
+&nbsp;   .faq details + details{margin-top:10px}
+
+&nbsp;   summary{cursor:pointer; font-weight:650}
+
+&nbsp;   summary::-webkit-details-marker{display:none}
+
+&nbsp;   .contact{
+
+&nbsp;     padding:18px;
+
+&nbsp;     display:grid; grid-template-columns: 1fr 1fr; gap:14px;
+
+&nbsp;   }
+
+&nbsp;   @media (max-width: 900px){ .contact{grid-template-columns:1fr} }
+
+&nbsp;   label{display:block; font-size:13px; color:var(--muted); margin-bottom:6px}
+
+&nbsp;   input, textarea{
+
+&nbsp;     width:100%;
+
+&nbsp;     padding:12px 12px;
+
+&nbsp;     border-radius:12px;
+
+&nbsp;     border:1px solid var(--line);
+
+&nbsp;     background:rgba(0,0,0,.20);
+
+&nbsp;     color:var(--text);
+
+&nbsp;     outline:none;
+
+&nbsp;   }
+
+&nbsp;   input:focus, textarea:focus{border-color:rgba(96,165,250,.55)}
+
+&nbsp;   textarea{min-height:120px; resize:vertical}
+
+&nbsp;   .fine{color:var(--muted); font-size:13px}
+
+&nbsp;   footer{padding:22px 0 36px; color:var(--muted)}
+
+&nbsp;   .foot{display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; border-top:1px solid var(--line); padding-top:16px}
+
+&nbsp;   .mini-links{display:flex; gap:12px; flex-wrap:wrap}
+
+&nbsp;   .mini-links a{opacity:.9}
+
+&nbsp; </style>
+
+</head>
+
+<body>
+
+&nbsp; <div class="nav">
+
+&nbsp;   <div class="wrap navin">
+
+&nbsp;     <a class="brand" href="#top" aria-label="Home">
+
+&nbsp;       <span class="logo" aria-hidden="true"></span>
+
+&nbsp;       <strong>Tec’s Books Bookkeeping</strong>
+
+&nbsp;     </a>
+
+&nbsp;     <div class="links">
+
+&nbsp;       <a href="#services">Services</a>
+
+&nbsp;       <a href="#how">How it works</a>
+
+&nbsp;       <a href="#pricing">Pricing</a>
+
+&nbsp;       <a href="#faq">FAQ</a>
+
+&nbsp;       <a class="btn primary" href="#contact">Contact</a>
+
+&nbsp;     </div>
+
+&nbsp;   </div>
+
+&nbsp; </div>
+
+
+
+&nbsp; <header id="top">
+
+&nbsp;   <div class="wrap hero">
+
+&nbsp;     <div>
+
+&nbsp;       <div class="kicker">San Diego + Remote • Bookkeeping</div>
+
+&nbsp;       <h1>Bookkeeping that keeps you tax-ready every month.</h1>
+
+&nbsp;       <p class="sub">
+
+&nbsp;         Clean books. Clear reports. No mystery charges. Monthly bookkeeping, catch-up/cleanup, and QuickBooks support for small businesses.
+
+&nbsp;       </p>
+
+&nbsp;       <div class="cta">
+
+&nbsp;         <a class="btn primary" href="#contact">Get a quote</a>
+
+&nbsp;         <a class="btn" href="#services">See services</a>
+
+&nbsp;         <!-- EDIT THIS: put your email + phone -->
+
+&nbsp;         <a class="btn" href="mailto:info@tecsbooksbookkeeping.com?subject=Bookkeeping%20Inquiry%20-%20tecsbooksbookkeeping.com">Email</a>
+
+&nbsp;       </div>
+
+&nbsp;       <p class="fine" style="margin-top:12px">
+
+&nbsp;         <!-- EDIT THIS LINE -->
+
+&nbsp;         Fast turnaround • Monthly check-ins • Built for small business owners who don’t want spreadsheets haunting their dreams
+
+&nbsp;       </p>
+
+&nbsp;     </div>
+
+
+
+&nbsp;     <div class="card stats">
+
+&nbsp;       <span class="pill">What you get</span>
+
+&nbsp;       <div class="statgrid" style="margin-top:12px">
+
+&nbsp;         <div class="stat">
+
+&nbsp;           <b>Monthly reports</b>
+
+&nbsp;           <span>P\&L + balance sheet</span>
+
+&nbsp;         </div>
+
+&nbsp;         <div class="stat">
+
+&nbsp;           <b>Bank recon</b>
+
+&nbsp;           <span>Every month, no gaps</span>
+
+&nbsp;         </div>
+
+&nbsp;         <div class="stat">
+
+&nbsp;           <b>Category cleanup</b>
+
+&nbsp;           <span>So taxes don’t hurt</span>
+
+&nbsp;         </div>
+
+&nbsp;         <div class="stat">
+
+&nbsp;           <b>QuickBooks help</b>
+
+&nbsp;           <span>Setup + fixes</span>
+
+&nbsp;         </div>
+
+&nbsp;       </div>
+
+&nbsp;       <div style="margin-top:14px" class="fine">
+
+&nbsp;         <!-- EDIT THIS -->
+
+&nbsp;         Industry note: Great fit for service businesses, contractors, online sellers, and solo operators.
+
+&nbsp;       </div>
+
+&nbsp;     </div>
+
+&nbsp;   </div>
+
+&nbsp; </header>
+
+
+
+&nbsp; <main>
+
+&nbsp;   <section id="services">
+
+&nbsp;     <div class="wrap">
+
+&nbsp;       <span class="pill">Services</span>
+
+&nbsp;       <h2 style="margin:10px 0 8px">Pick what you need. Keep it simple.</h2>
+
+&nbsp;       <p style="margin:0; color:var(--muted)">Start small, scale later. Most clients begin with monthly bookkeeping + cleanup.</p>
+
+
+
+&nbsp;       <div class="grid3" style="margin-top:14px">
+
+&nbsp;         <div class="card tile">
+
+&nbsp;           <span class="pill">Monthly</span>
+
+&nbsp;           <h3>Monthly bookkeeping</h3>
+
+&nbsp;           <p>Reconciliation, categorization, and monthly financial reports so you always know where you stand.</p>
+
+&nbsp;         </div>
+
+&nbsp;         <div class="card tile">
+
+&nbsp;           <span class="pill">Catch-up</span>
+
+&nbsp;           <h3>Catch-up / cleanup</h3>
+
+&nbsp;           <p>Behind a few months (or years)? We’ll get you current and fix messy categories.</p>
+
+&nbsp;         </div>
+
+&nbsp;         <div class="card tile">
+
+&nbsp;           <span class="pill">QuickBooks</span>
+
+&nbsp;           <h3>QuickBooks setup \& support</h3>
+
+&nbsp;           <p>New file setup, chart of accounts, training, troubleshooting, and “why is this doing that?” moments.</p>
+
+&nbsp;         </div>
+
+&nbsp;       </div>
+
+&nbsp;     </div>
+
+&nbsp;   </section>
+
+
+
+&nbsp;   <section id="how">
+
+&nbsp;     <div class="wrap">
+
+&nbsp;       <div class="split">
+
+&nbsp;         <div class="card box">
+
+&nbsp;           <span class="pill">How it works</span>
+
+&nbsp;           <h2>Three steps. No chaos.</h2>
+
+&nbsp;           <p>We keep your books clean and predictable. You keep running the business.</p>
+
+&nbsp;           <div class="grid3 steps" style="grid-template-columns:1fr; gap:10px; margin-top:10px">
+
+&nbsp;             <div class="step card" style="box-shadow:none; background:rgba(0,0,0,.18)">
+
+&nbsp;               <h3>Quick intake</h3>
+
+&nbsp;               <div class="fine" style="margin-top:6px">We learn your business, tools, and what “done” looks like for you.</div>
+
+&nbsp;             </div>
+
+&nbsp;             <div class="step card" style="box-shadow:none; background:rgba(0,0,0,.18)">
+
+&nbsp;               <h3>Monthly workflow</h3>
+
+&nbsp;               <div class="fine" style="margin-top:6px">Reconcile → categorize → review → send reports.</div>
+
+&nbsp;             </div>
+
+&nbsp;             <div class="step card" style="box-shadow:none; background:rgba(0,0,0,.18)">
+
+&nbsp;               <h3>Simple check-ins</h3>
+
+&nbsp;               <div class="fine" style="margin-top:6px">Quick questions, clear answers, fewer surprises at tax time.</div>
+
+&nbsp;             </div>
+
+&nbsp;           </div>
+
+&nbsp;         </div>
+
+
+
+&nbsp;         <div class="card box">
+
+&nbsp;           <span class="pill">Trust \& clarity</span>
+
+&nbsp;           <h2>Built for real-world small business.</h2>
+
+&nbsp;           <p>Not corporate vibes. Just clean books and good communication.</p>
+
+&nbsp;           <ul>
+
+&nbsp;             <li>Transparent scope (what’s included / what isn’t)</li>
+
+&nbsp;             <li>Consistent monthly cadence</li>
+
+&nbsp;             <li>Organized records for your CPA/tax prep</li>
+
+&nbsp;             <li>Secure handling of financial data</li>
+
+&nbsp;           </ul>
+
+&nbsp;           <p class="fine" style="margin-top:12px">
+
+&nbsp;             <!-- EDIT THIS -->
+
+&nbsp;             Add trust badges here later (QuickBooks ProAdvisor, insured/bonded, years experience, etc.).
+
+&nbsp;           </p>
+
+&nbsp;         </div>
+
+&nbsp;       </div>
+
+&nbsp;     </div>
+
+&nbsp;   </section>
+
+
+
+&nbsp;   <section id="pricing">
+
+&nbsp;     <div class="wrap">
+
+&nbsp;       <span class="pill">Pricing</span>
+
+&nbsp;       <h2 style="margin:10px 0 8px">Straightforward starting points.</h2>
+
+&nbsp;       <p style="margin:0; color:var(--muted)">
+
+&nbsp;         Exact pricing depends on monthly volume + how clean things are today.
+
+&nbsp;       </p>
+
+
+
+&nbsp;       <div class="grid3" style="margin-top:14px">
+
+&nbsp;         <div class="card tile">
+
+&nbsp;           <h3>Starter</h3>
+
+&nbsp;           <p class="fine">For low-volume, simple bookkeeping.</p>
+
+&nbsp;           <p style="margin:10px 0 0"><b>Starts at $249/mo</b></p>
+
+&nbsp;         </div>
+
+&nbsp;         <div class="card tile">
+
+&nbsp;           <h3>Growth</h3>
+
+&nbsp;           <p class="fine">For growing businesses with more transactions.</p>
+
+&nbsp;           <p style="margin:10px 0 0"><b>Starts at $399/mo</b></p>
+
+&nbsp;         </div>
+
+&nbsp;         <div class="card tile">
+
+&nbsp;           <h3>Catch-up / Cleanup</h3>
+
+&nbsp;           <p class="fine">One-time cleanup or getting current.</p>
+
+&nbsp;           <p style="margin:10px 0 0"><b>Quoted after review</b></p>
+
+&nbsp;         </div>
+
+&nbsp;       </div>
+
+
+
+&nbsp;       <p class="fine" style="margin-top:12px">
+
+&nbsp;         Tip: If your books are behind, we usually do a cleanup first, then switch to monthly.
+
+&nbsp;       </p>
+
+&nbsp;     </div>
+
+&nbsp;   </section>
+
+
+
+&nbsp;   <section id="faq">
+
+&nbsp;     <div class="wrap">
+
+&nbsp;       <span class="pill">FAQ</span>
+
+&nbsp;       <h2 style="margin:10px 0 8px">The usual questions.</h2>
+
+
+
+&nbsp;       <div class="faq" style="margin-top:12px">
+
+&nbsp;         <details class="card">
+
+&nbsp;           <summary>Do you do taxes too?</summary>
+
+&nbsp;           <div class="fine" style="margin-top:8px">Bookkeeping prepares clean records for your tax pro. We can coordinate with your CPA.</div>
+
+&nbsp;         </details>
+
+&nbsp;         <details class="card">
+
+&nbsp;           <summary>What do you need from me each month?</summary>
+
+&nbsp;           <div class="fine" style="margin-top:8px">Typically: bank/credit access, any invoices/receipts not in the system, and answers to a few quick questions.</div>
+
+&nbsp;         </details>
+
+&nbsp;         <details class="card">
+
+&nbsp;           <summary>Can you work with my current QuickBooks file?</summary>
+
+&nbsp;           <div class="fine" style="margin-top:8px">Yep. We can clean it up and keep it maintained going forward.</div>
+
+&nbsp;         </details>
+
+&nbsp;         <details class="card">
+
+&nbsp;           <summary>Do you work with clients outside San Diego?</summary>
+
+&nbsp;           <div class="fine" style="margin-top:8px">Yes—remote is fine. San Diego is just home base.</div>
+
+&nbsp;         </details>
+
+&nbsp;       </div>
+
+&nbsp;     </div>
+
+&nbsp;   </section>
+
+
+
+&nbsp;   <section id="contact">
+
+&nbsp;     <div class="wrap">
+
+&nbsp;       <span class="pill">Contact</span>
+
+&nbsp;       <h2 style="margin:10px 0 8px">Tell me what you need.</h2>
+
+&nbsp;       <p style="margin:0 0 12px; color:var(--muted)">
+
+&nbsp;         This form opens your email app (fast + simple). If you want a real web form submission later, I’ll add it.
+
+&nbsp;       </p>
+
+
+
+&nbsp;       <div class="card contact">
+
+&nbsp;         <div>
+
+&nbsp;           <label for="name">Name</label>
+
+&nbsp;           <input id="name" name="name" placeholder="Your name" autocomplete="name" />
+
+&nbsp;         </div>
+
+&nbsp;         <div>
+
+&nbsp;           <label for="email">Email</label>
+
+&nbsp;           <input id="email" name="email" placeholder="you@example.com" autocomplete="email" />
+
+&nbsp;         </div>
+
+&nbsp;         <div style="grid-column:1 / -1">
+
+&nbsp;           <label for="msg">What do you need help with?</label>
+
+&nbsp;           <textarea id="msg" name="msg" placeholder="Monthly bookkeeping, catch-up, QuickBooks setup..."></textarea>
+
+&nbsp;         </div>
+
+&nbsp;         <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap">
+
+&nbsp;           <button class="btn primary" type="button" onclick="sendEmail()">Send</button>
+
+&nbsp;           <!-- EDIT THIS: phone (optional) -->
+
+&nbsp;           <a class="btn" href="tel:+16199162545">Call</a>
+
+&nbsp;           <span class="fine">Or email: <a href="mailto:info@<!-- index.html  (drop this single file into a folder and publish it on Cloudflare Pages) -->
+
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+&nbsp; <meta charset="utf-8" />
+
+&nbsp; <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+&nbsp; <title>Tec’s Books Bookkeeping | Bookkeeping for small businesses</title>
+
+&nbsp; <meta name="description" content="Monthly bookkeeping, catch-up/cleanup, and QuickBooks support for small businesses. San Diego + remote." />
+
+&nbsp; <meta name="theme-color" content="#111827" />
+
+
+
+&nbsp; <!-- Simple social preview -->
+
+&nbsp; <meta property="og:title" content="Tec’s Books Bookkeeping" />
+
+&nbsp; <meta property="og:description" content="Bookkeeping that keeps you tax-ready every month." />
+
+&nbsp; <meta property="og:type" content="website" />
+
+
+
+&nbsp; <style>
+
+&nbsp;   :root{
+
+&nbsp;     --bg:#0b1220;
+
+&nbsp;     --card:#0f1a30;
+
+&nbsp;     --text:#e5e7eb;
+
+&nbsp;     --muted:#a7b0c0;
+
+&nbsp;     --line:rgba(255,255,255,.10);
+
+&nbsp;     --accent:#5eead4;
+
+&nbsp;     --accent2:#60a5fa;
+
+&nbsp;     --shadow: 0 20px 60px rgba(0,0,0,.35);
+
+&nbsp;     --radius: 18px;
+
+&nbsp;     --max: 1100px;
+
+&nbsp;   }
+
+&nbsp;   \*{box-sizing:border-box}
+
+&nbsp;   html{scroll-behavior:smooth}
+
+&nbsp;   body{
+
+&nbsp;     margin:0;
+
+&nbsp;     font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+
+&nbsp;     color:var(--text);
+
+&nbsp;     background:
+
+&nbsp;       radial-gradient(1000px 600px at 20% -10%, rgba(96,165,250,.25), transparent 60%),
+
+&nbsp;       radial-gradient(900px 600px at 90% 10%, rgba(94,234,212,.22), transparent 55%),
+
+&nbsp;       linear-gradient(180deg, var(--bg), #070b12 70%);
+
+&nbsp;   }
+
+&nbsp;   a{color:inherit}
+
+&nbsp;   .wrap{max-width:var(--max); margin:0 auto; padding:0 20px}
+
+&nbsp;   .nav{
+
+&nbsp;     position:sticky; top:0; z-index:10;
+
+&nbsp;     backdrop-filter:saturate(1.2) blur(10px);
+
+&nbsp;     background:rgba(7,11,18,.65);
+
+&nbsp;     border-bottom:1px solid var(--line);
+
+&nbsp;   }
+
+&nbsp;   .navin{display:flex; align-items:center; justify-content:space-between; gap:14px; padding:12px 0}
+
+&nbsp;   .brand{display:flex; align-items:center; gap:10px; text-decoration:none}
+
+&nbsp;   .logo{
+
+&nbsp;     width:34px; height:34px; border-radius:10px;
+
+&nbsp;     background: linear-gradient(135deg, var(--accent), var(--accent2));
+
+&nbsp;     box-shadow:0 10px 30px rgba(96,165,250,.25);
+
+&nbsp;   }
+
+&nbsp;   .brand strong{letter-spacing:.2px}
+
+&nbsp;   .links{display:flex; gap:14px; flex-wrap:wrap; justify-content:flex-end}
+
+&nbsp;   .links a{opacity:.9; text-decoration:none; padding:8px 10px; border-radius:10px}
+
+&nbsp;   .links a:hover{background:rgba(255,255,255,.06)}
+
+&nbsp;   .btn{
+
+&nbsp;     display:inline-flex; align-items:center; justify-content:center; gap:10px;
+
+&nbsp;     padding:12px 14px; border-radius:12px; border:1px solid var(--line);
+
+&nbsp;     text-decoration:none; cursor:pointer;
+
+&nbsp;     background:rgba(255,255,255,.06);
+
+&nbsp;   }
+
+&nbsp;   .btn.primary{
+
+&nbsp;     background:linear-gradient(135deg, rgba(94,234,212,.18), rgba(96,165,250,.18));
+
+&nbsp;     border-color:rgba(94,234,212,.35);
+
+&nbsp;   }
+
+&nbsp;   .btn.primary:hover{filter:brightness(1.08)}
+
+&nbsp;   .btn:hover{background:rgba(255,255,255,.09)}
+
+&nbsp;   header{padding:60px 0 28px}
+
+&nbsp;   .hero{
+
+&nbsp;     display:grid; gap:18px; align-items:start;
+
+&nbsp;     grid-template-columns: 1.2fr .8fr;
+
+&nbsp;   }
+
+&nbsp;   @media (max-width: 900px){ .hero{grid-template-columns:1fr} header{padding-top:34px}}
+
+&nbsp;   .kicker{color:var(--muted); font-weight:600; letter-spacing:.6px; text-transform:uppercase; font-size:12px}
+
+&nbsp;   h1{margin:0; font-size:44px; line-height:1.05}
+
+&nbsp;   @media (max-width: 520px){ h1{font-size:36px}}
+
+&nbsp;   .sub{color:var(--muted); font-size:18px; margin-top:10px}
+
+&nbsp;   .cta{display:flex; gap:12px; flex-wrap:wrap; margin-top:18px}
+
+&nbsp;   .card{
+
+&nbsp;     background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+
+&nbsp;     border:1px solid var(--line);
+
+&nbsp;     border-radius:var(--radius);
+
+&nbsp;     box-shadow:var(--shadow);
+
+&nbsp;   }
+
+&nbsp;   .stats{padding:18px}
+
+&nbsp;   .statgrid{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+
+&nbsp;   .stat{
+
+&nbsp;     padding:12px; border-radius:14px; border:1px solid var(--line);
+
+&nbsp;     background:rgba(0,0,0,.18)
+
+&nbsp;   }
+
+&nbsp;   .stat b{display:block; font-size:18px}
+
+&nbsp;   .stat span{color:var(--muted); font-size:13px}
+
+&nbsp;   section{padding:28px 0}
+
+&nbsp;   .grid3{display:grid; gap:14px; grid-template-columns: repeat(3, 1fr)}
+
+&nbsp;   @media (max-width: 900px){ .grid3{grid-template-columns:1fr} }
+
+&nbsp;   .tile{padding:18px}
+
+&nbsp;   .tile h3{margin:10px 0 6px}
+
+&nbsp;   .tile p{margin:0; color:var(--muted)}
+
+&nbsp;   .pill{
+
+&nbsp;     display:inline-flex; align-items:center; gap:8px;
+
+&nbsp;     padding:7px 10px; border-radius:999px; font-size:13px;
+
+&nbsp;     border:1px solid var(--line); background:rgba(0,0,0,.18); color:var(--muted)
+
+&nbsp;   }
+
+&nbsp;   .split{display:grid; grid-template-columns: 1fr 1fr; gap:14px}
+
+&nbsp;   @media (max-width: 900px){ .split{grid-template-columns:1fr} }
+
+&nbsp;   .box{padding:18px}
+
+&nbsp;   .box h2{margin:0 0 8px}
+
+&nbsp;   .box p{margin:0 0 10px; color:var(--muted)}
+
+&nbsp;   ul{margin:10px 0 0; padding-left:18px; color:var(--muted)}
+
+&nbsp;   li{margin:6px 0}
+
+&nbsp;   .steps{counter-reset:s}
+
+&nbsp;   .step{padding:18px}
+
+&nbsp;   .step:before{
+
+&nbsp;     counter-increment:s;
+
+&nbsp;     content:counter(s);
+
+&nbsp;     display:inline-flex; align-items:center; justify-content:center;
+
+&nbsp;     width:28px; height:28px; border-radius:10px;
+
+&nbsp;     background:rgba(94,234,212,.18); border:1px solid rgba(94,234,212,.35);
+
+&nbsp;     margin-right:10px; font-weight:700;
+
+&nbsp;   }
+
+&nbsp;   .step h3{display:inline; margin:0}
+
+&nbsp;   .faq details{
+
+&nbsp;     padding:14px 16px; border-radius:14px; border:1px solid var(--line);
+
+&nbsp;     background:rgba(0,0,0,.18)
+
+&nbsp;   }
+
+&nbsp;   .faq details + details{margin-top:10px}
+
+&nbsp;   summary{cursor:pointer; font-weight:650}
+
+&nbsp;   summary::-webkit-details-marker{display:none}
+
+&nbsp;   .contact{
+
+&nbsp;     padding:18px;
+
+&nbsp;     display:grid; grid-template-columns: 1fr 1fr; gap:14px;
+
+&nbsp;   }
+
+&nbsp;   @media (max-width: 900px){ .contact{grid-template-columns:1fr} }
+
+&nbsp;   label{display:block; font-size:13px; color:var(--muted); margin-bottom:6px}
+
+&nbsp;   input, textarea{
+
+&nbsp;     width:100%;
+
+&nbsp;     padding:12px 12px;
+
+&nbsp;     border-radius:12px;
+
+&nbsp;     border:1px solid var(--line);
+
+&nbsp;     background:rgba(0,0,0,.20);
+
+&nbsp;     color:var(--text);
+
+&nbsp;     outline:none;
+
+&nbsp;   }
+
+&nbsp;   input:focus, textarea:focus{border-color:rgba(96,165,250,.55)}
+
+&nbsp;   textarea{min-height:120px; resize:vertical}
+
+&nbsp;   .fine{color:var(--muted); font-size:13px}
+
+&nbsp;   footer{padding:22px 0 36px; color:var(--muted)}
+
+&nbsp;   .foot{display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; border-top:1px solid var(--line); padding-top:16px}
+
+&nbsp;   .mini-links{display:flex; gap:12px; flex-wrap:wrap}
+
+&nbsp;   .mini-links a{opacity:.9}
+
+&nbsp; </style>
+
+</head>
+
+<body>
+
+&nbsp; <div class="nav">
+
+&nbsp;   <div class="wrap navin">
+
+&nbsp;     <a class="brand" href="#top" aria-label="Home">
+
+&nbsp;       <span class="logo" aria-hidden="true"></span>
+
+&nbsp;       <strong>Tec’s Books Bookkeeping</strong>
+
+&nbsp;     </a>
+
+&nbsp;     <div class="links">
+
+&nbsp;       <a href="#services">Services</a>
+
+&nbsp;       <a href="#how">How it works</a>
+
+&nbsp;       <a href="#pricing">Pricing</a>
+
+&nbsp;       <a href="#faq">FAQ</a>
+
+&nbsp;       <a class="btn primary" href="#contact">Contact</a>
+
+&nbsp;     </div>
+
+&nbsp;   </div>
+
+&nbsp; </div>
+
+
+
+&nbsp; <header id="top">
+
+&nbsp;   <div class="wrap hero">
+
+&nbsp;     <div>
+
+&nbsp;       <div class="kicker">San Diego + Remote • Bookkeeping</div>
+
+&nbsp;       <h1>Bookkeeping that keeps you tax-ready every month.</h1>
+
+&nbsp;       <p class="sub">
+
+&nbsp;         Clean books. Clear reports. No mystery charges. Monthly bookkeeping, catch-up/cleanup, and QuickBooks support for small businesses.
+
+&nbsp;       </p>
+
+&nbsp;       <div class="cta">
+
+&nbsp;         <a class="btn primary" href="#contact">Get a quote</a>
+
+&nbsp;         <a class="btn" href="#services">See services</a>
+
+&nbsp;         <!-- EDIT THIS: put your email + phone -->
+
+&nbsp;         <a class="btn" href="mailto:info@tecsbooksbookkeeping.com?subject=Bookkeeping%20Inquiry%20-%20tecsbooksbookkeeping.com">Email</a>
+
+&nbsp;       </div>
+
+&nbsp;       <p class="fine" style="margin-top:12px">
+
+&nbsp;         <!-- EDIT THIS LINE -->
+
+&nbsp;         Fast turnaround • Monthly check-ins • Built for small business owners who don’t want spreadsheets haunting their dreams
+
+&nbsp;       </p>
+
+&nbsp;     </div>
+
+
+
+&nbsp;     <div class="card stats">
+
+&nbsp;       <span class="pill">What you get</span>
+
+&nbsp;       <div class="statgrid" style="margin-top:12px">
+
+&nbsp;         <div class="stat">
+
+&nbsp;           <b>Monthly reports</b>
+
+&nbsp;           <span>P\&L + balance sheet</span>
+
+&nbsp;         </div>
+
+&nbsp;         <div class="stat">
+
+&nbsp;           <b>Bank recon</b>
+
+&nbsp;           <span>Every month, no gaps</span>
+
+&nbsp;         </div>
+
+&nbsp;         <div class="stat">
+
+&nbsp;           <b>Category cleanup</b>
+
+&nbsp;           <span>So taxes don’t hurt</span>
+
+&nbsp;         </div>
+
+&nbsp;         <div class="stat">
+
+&nbsp;           <b>QuickBooks help</b>
+
+&nbsp;           <span>Setup + fixes</span>
+
+&nbsp;         </div>
+
+&nbsp;       </div>
+
+&nbsp;       <div style="margin-top:14px" class="fine">
+
+&nbsp;         <!-- EDIT THIS -->
+
+&nbsp;         Industry note: Great fit for service businesses, contractors, online sellers, and solo operators.
+
+&nbsp;       </div>
+
+&nbsp;     </div>
+
+&nbsp;   </div>
+
+&nbsp; </header>
+
+
+
+&nbsp; <main>
+
+&nbsp;   <section id="services">
+
+&nbsp;     <div class="wrap">
+
+&nbsp;       <span class="pill">Services</span>
+
+&nbsp;       <h2 style="margin:10px 0 8px">Pick what you need. Keep it simple.</h2>
+
+&nbsp;       <p style="margin:0; color:var(--muted)">Start small, scale later. Most clients begin with monthly bookkeeping + cleanup.</p>
+
+
+
+&nbsp;       <div class="grid3" style="margin-top:14px">
+
+&nbsp;         <div class="card tile">
+
+&nbsp;           <span class="pill">Monthly</span>
+
+&nbsp;           <h3>Monthly bookkeeping</h3>
+
+&nbsp;           <p>Reconciliation, categorization, and monthly financial reports so you always know where you stand.</p>
+
+&nbsp;         </div>
+
+&nbsp;         <div class="card tile">
+
+&nbsp;           <span class="pill">Catch-up</span>
+
+&nbsp;           <h3>Catch-up / cleanup</h3>
+
+&nbsp;           <p>Behind a few months (or years)? We’ll get you current and fix messy categories.</p>
+
+&nbsp;         </div>
+
+&nbsp;         <div class="card tile">
+
+&nbsp;           <span class="pill">QuickBooks</span>
+
+&nbsp;           <h3>QuickBooks setup \& support</h3>
+
+&nbsp;           <p>New file setup, chart of accounts, training, troubleshooting, and “why is this doing that?” moments.</p>
+
+&nbsp;         </div>
+
+&nbsp;       </div>
+
+&nbsp;     </div>
+
+&nbsp;   </section>
+
+
+
+&nbsp;   <section id="how">
+
+&nbsp;     <div class="wrap">
+
+&nbsp;       <div class="split">
+
+&nbsp;         <div class="card box">
+
+&nbsp;           <span class="pill">How it works</span>
+
+&nbsp;           <h2>Three steps. No chaos.</h2>
+
+&nbsp;           <p>We keep your books clean and predictable. You keep running the business.</p>
+
+&nbsp;           <div class="grid3 steps" style="grid-template-columns:1fr; gap:10px; margin-top:10px">
+
+&nbsp;             <div class="step card" style="box-shadow:none; background:rgba(0,0,0,.18)">
+
+&nbsp;               <h3>Quick intake</h3>
+
+&nbsp;               <div class="fine" style="margin-top:6px">We learn your business, tools, and what “done” looks like for you.</div>
+
+&nbsp;             </div>
+
+&nbsp;             <div class="step card" style="box-shadow:none; background:rgba(0,0,0,.18)">
+
+&nbsp;               <h3>Monthly workflow</h3>
+
+&nbsp;               <div class="fine" style="margin-top:6px">Reconcile → categorize → review → send reports.</div>
+
+&nbsp;             </div>
+
+&nbsp;             <div class="step card" style="box-shadow:none; background:rgba(0,0,0,.18)">
+
+&nbsp;               <h3>Simple check-ins</h3>
+
+&nbsp;               <div class="fine" style="margin-top:6px">Quick questions, clear answers, fewer surprises at tax time.</div>
+
+&nbsp;             </div>
+
+&nbsp;           </div>
+
+&nbsp;         </div>
+
+
+
+&nbsp;         <div class="card box">
+
+&nbsp;           <span class="pill">Trust \& clarity</span>
+
+&nbsp;           <h2>Built for real-world small business.</h2>
+
+&nbsp;           <p>Not corporate vibes. Just clean books and good communication.</p>
+
+&nbsp;           <ul>
+
+&nbsp;             <li>Transparent scope (what’s included / what isn’t)</li>
+
+&nbsp;             <li>Consistent monthly cadence</li>
+
+&nbsp;             <li>Organized records for your CPA/tax prep</li>
+
+&nbsp;             <li>Secure handling of financial data</li>
+
+&nbsp;           </ul>
+
+&nbsp;           <p class="fine" style="margin-top:12px">
+
+&nbsp;             <!-- EDIT THIS -->
+
+&nbsp;             Add trust badges here later (QuickBooks ProAdvisor, insured/bonded, years experience, etc.).
+
+&nbsp;           </p>
+
+&nbsp;         </div>
+
+&nbsp;       </div>
+
+&nbsp;     </div>
+
+&nbsp;   </section>
+
+
+
+&nbsp;   <section id="pricing">
+
+&nbsp;     <div class="wrap">
+
+&nbsp;       <span class="pill">Pricing</span>
+
+&nbsp;       <h2 style="margin:10px 0 8px">Straightforward starting points.</h2>
+
+&nbsp;       <p style="margin:0; color:var(--muted)">
+
+&nbsp;         Exact pricing depends on monthly volume + how clean things are today.
+
+&nbsp;       </p>
+
+
+
+&nbsp;       <div class="grid3" style="margin-top:14px">
+
+&nbsp;         <div class="card tile">
+
+&nbsp;           <h3>Starter</h3>
+
+&nbsp;           <p class="fine">For low-volume, simple bookkeeping.</p>
+
+&nbsp;           <p style="margin:10px 0 0"><b>Starts at $249/mo</b></p>
+
+&nbsp;         </div>
+
+&nbsp;         <div class="card tile">
+
+&nbsp;           <h3>Growth</h3>
+
+&nbsp;           <p class="fine">For growing businesses with more transactions.</p>
+
+&nbsp;           <p style="margin:10px 0 0"><b>Starts at $399/mo</b></p>
+
+&nbsp;         </div>
+
+&nbsp;         <div class="card tile">
+
+&nbsp;           <h3>Catch-up / Cleanup</h3>
+
+&nbsp;           <p class="fine">One-time cleanup or getting current.</p>
+
+&nbsp;           <p style="margin:10px 0 0"><b>Quoted after review</b></p>
+
+&nbsp;         </div>
+
+&nbsp;       </div>
+
+
+
+&nbsp;       <p class="fine" style="margin-top:12px">
+
+&nbsp;         Tip: If your books are behind, we usually do a cleanup first, then switch to monthly.
+
+&nbsp;       </p>
+
+&nbsp;     </div>
+
+&nbsp;   </section>
+
+
+
+&nbsp;   <section id="faq">
+
+&nbsp;     <div class="wrap">
+
+&nbsp;       <span class="pill">FAQ</span>
+
+&nbsp;       <h2 style="margin:10px 0 8px">The usual questions.</h2>
+
+
+
+&nbsp;       <div class="faq" style="margin-top:12px">
+
+&nbsp;         <details class="card">
+
+&nbsp;           <summary>Do you do taxes too?</summary>
+
+&nbsp;           <div class="fine" style="margin-top:8px">Bookkeeping prepares clean records for your tax pro. We can coordinate with your CPA.</div>
+
+&nbsp;         </details>
+
+&nbsp;         <details class="card">
+
+&nbsp;           <summary>What do you need from me each month?</summary>
+
+&nbsp;           <div class="fine" style="margin-top:8px">Typically: bank/credit access, any invoices/receipts not in the system, and answers to a few quick questions.</div>
+
+&nbsp;         </details>
+
+&nbsp;         <details class="card">
+
+&nbsp;           <summary>Can you work with my current QuickBooks file?</summary>
+
+&nbsp;           <div class="fine" style="margin-top:8px">Yep. We can clean it up and keep it maintained going forward.</div>
+
+&nbsp;         </details>
+
+&nbsp;         <details class="card">
+
+&nbsp;           <summary>Do you work with clients outside San Diego?</summary>
+
+&nbsp;           <div class="fine" style="margin-top:8px">Yes—remote is fine. San Diego is just home base.</div>
+
+&nbsp;         </details>
+
+&nbsp;       </div>
+
+&nbsp;     </div>
+
+&nbsp;   </section>
+
+
+
+&nbsp;   <section id="contact">
+
+&nbsp;     <div class="wrap">
+
+&nbsp;       <span class="pill">Contact</span>
+
+&nbsp;       <h2 style="margin:10px 0 8px">Tell me what you need.</h2>
+
+&nbsp;       <p style="margin:0 0 12px; color:var(--muted)">
+
+&nbsp;         This form opens your email app (fast + simple). If you want a real web form submission later, I’ll add it.
+
+&nbsp;       </p>
+
+
+
+&nbsp;       <div class="card contact">
+
+&nbsp;         <div>
+
+&nbsp;           <label for="name">Name</label>
+
+&nbsp;           <input id="name" name="name" placeholder="Your name" autocomplete="name" />
+
+&nbsp;         </div>
+
+&nbsp;         <div>
+
+&nbsp;           <label for="email">Email</label>
+
+&nbsp;           <input id="email" name="email" placeholder="you@example.com" autocomplete="email" />
+
+&nbsp;         </div>
+
+&nbsp;         <div style="grid-column:1 / -1">
+
+&nbsp;           <label for="msg">What do you need help with?</label>
+
+&nbsp;           <textarea id="msg" name="msg" placeholder="Monthly bookkeeping, catch-up, QuickBooks setup..."></textarea>
+
+&nbsp;         </div>
+
+&nbsp;         <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap">
+
+&nbsp;           <button class="btn primary" type="button" onclick="sendEmail()">Send</button>
+
+&nbsp;           <!-- EDIT THIS: phone (optional) -->
+
+&nbsp;           <a class="btn" href="tel:+16199162545">Call</a>
+
+&nbsp;           <span class="fine">Or email: <a href="mailto:info@tecsbooksbookkeeping.com">info@tecsbooksbookkeeping.com</a></span>
+
+&nbsp;         </div>
+
+&nbsp;       </div>
+
+
+
+&nbsp;       <p class="fine" style="margin-top:10px">
+
+&nbsp;         <!-- EDIT THIS -->
+
+&nbsp;         Business hours: Mon–Fri • Response usually within 1 business day
+
+&nbsp;       </p>
+
+&nbsp;     </div>
+
+&nbsp;   </section>
+
+&nbsp; </main>
+
+
+
+&nbsp; <footer>
+
+&nbsp;   <div class="wrap foot">
+
+&nbsp;     <div>© <span id="year"></span> Tec’s Books Bookkeeping</div>
+
+&nbsp;     <div class="mini-links">
+
+&nbsp;       <a href="#services">Services</a>
+
+&nbsp;       <a href="#how">How it works</a>
+
+&nbsp;       <a href="#contact">Contact</a>
+
+&nbsp;     </div>
+
+&nbsp;     <div class="fine">
+
+&nbsp;       <!-- EDIT THIS -->
+
+&nbsp;       Not a law/tax firm. Bookkeeping services only.
+
+&nbsp;     </div>
+
+&nbsp;   </div>
+
+&nbsp; </footer>
+
+
+
+&nbsp; <script>
+
+&nbsp;   document.getElementById("year").textContent = new Date().getFullYear();
+
+
+
+&nbsp;   // EDIT THIS: where messages should go
+
+&nbsp;   const TO\_EMAIL = "info@tecsbooksbookkeeping.com";
+
+
+
+&nbsp;   function sendEmail(){
+
+&nbsp;     const name = document.getElementById("name").value.trim();
+
+&nbsp;     const email = document.getElementById("email").value.trim();
+
+&nbsp;     const msg = document.getElementById("msg").value.trim();
+
+
+
+&nbsp;     const subject = encodeURIComponent("Bookkeeping Inquiry - tecsbooksbookkeeping.com");
+
+&nbsp;     const body = encodeURIComponent(
+
+&nbsp;       `Name: ${name || "(not provided)"}\\n` +
+
+&nbsp;       `Email: ${email || "(not provided)"}\\n\\n` +
+
+&nbsp;       `${msg || "(no message)"}\\n`
+
+&nbsp;     );
+
+
+
+&nbsp;     window.location.href = `mailto:${TO\_EMAIL}?subject=${subject}\&body=${body}`;
+
+&nbsp;   }
+
+&nbsp; </script>
+
+</body>
+
+</html>
+
+">info@tecsbooksbookkeeping.com</a></span>
+
+&nbsp;         </div>
+
+&nbsp;       </div>
+
+
+
+&nbsp;       <p class="fine" style="margin-top:10px">
+
+&nbsp;         <!-- EDIT THIS -->
+
+&nbsp;         Business hours: Mon–Fri • Response usually within 1 business day
+
+&nbsp;       </p>
+
+&nbsp;     </div>
+
+&nbsp;   </section>
+
+&nbsp; </main>
+
+
+
+&nbsp; <footer>
+
+&nbsp;   <div class="wrap foot">
+
+&nbsp;     <div>© <span id="year"></span> Tec’s Books Bookkeeping</div>
+
+&nbsp;     <div class="mini-links">
+
+&nbsp;       <a href="#services">Services</a>
+
+&nbsp;       <a href="#how">How it works</a>
+
+&nbsp;       <a href="#contact">Contact</a>
+
+&nbsp;     </div>
+
+&nbsp;     <div class="fine">
+
+&nbsp;       <!-- EDIT THIS -->
+
+&nbsp;       Not a law/tax firm. Bookkeeping services only.
+
+&nbsp;     </div>
+
+&nbsp;   </div>
+
+&nbsp; </footer>
+
+
+
+&nbsp; <script>
+
+&nbsp;   document.getElementById("year").textContent = new Date().getFullYear();
+
+
+
+&nbsp;   // EDIT THIS: where messages should go
+
+&nbsp;   const TO\_EMAIL = "info@tecsbooksbookkeeping.com";
+
+
+
+&nbsp;   function sendEmail(){
+
+&nbsp;     const name = document.getElementById("name").value.trim();
+
+&nbsp;     const email = document.getElementById("email").value.trim();
+
+&nbsp;     const msg = document.getElementById("msg").value.trim();
+
+
+
+&nbsp;     const subject = encodeURIComponent("Bookkeeping Inquiry - tecsbooksbookkeeping.com");
+
+&nbsp;     const body = encodeURIComponent(
+
+&nbsp;       `Name: ${name || "(not provided)"}\\n` +
+
+&nbsp;       `Email: ${email || "(not provided)"}\\n\\n` +
+
+&nbsp;       `${msg || "(no message)"}\\n`
+
+&nbsp;     );
+
+
+
+&nbsp;     window.location.href = `mailto:${TO\_EMAIL}?subject=${subject}\&body=${body}`;
+
+&nbsp;   }
+
+&nbsp; </script>
+
+</body>
+
+</html>
+
+
+
