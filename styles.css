@@ -1,0 +1,102 @@
+/* Base reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #111;
+  background: #fafafa;
+  line-height: 1.6;
+}
+
+/* Layout */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+header a {
+  text-decoration: none;
+  color: #111;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+h1 {
+  font-size: 2.6rem;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 32px;
+}
+
+/* Buttons */
+.actions a {
+  display: inline-block;
+  margin-right: 16px;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.actions a.primary {
+  background: #111;
+  color: white;
+}
+
+.actions a.secondary {
+  border: 1px solid #ccc;
+  color: #111;
+}
+
+/* Sections */
+section {
+  margin-top: 80px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 24px;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 14px;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/* Footer note */
+.note {
+  margin-top: 40px;
+  color: #666;
+  font-size: 0.95rem;
+}
