@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-<<<<<<< HEAD
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Monthly bookkeeping, cleanup, and QuickBooks support for small businesses." />
-  <title>Tec’s Books Bookkeeping | Bookkeeping for small businesses</title>
+
+  <!-- SEO Meta -->
+  <title>Tecs Books Bookkeeping | Reliable Bookkeeping for Small Businesses in San Diego</title>
+  <meta name="description" content="Stress-free bookkeeping for small businesses, freelancers, and sole proprietors in San Diego. Monthly bookkeeping, catch-up cleanup, and QuickBooks support you can trust." />
 
   <style>
     :root{
@@ -28,7 +29,7 @@
     html,body{ height:100%; }
     body{
       margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
       color:var(--text);
       background:
         radial-gradient(1200px 600px at 80% 15%, rgba(54,163,255,.28), transparent 60%),
@@ -40,7 +41,6 @@
     a{ color:inherit; text-decoration:none; }
     .wrap{ width:min(var(--max), calc(100% - 40px)); margin:0 auto; }
 
-    /* Header */
     header{
       position:sticky;
       top:0;
@@ -60,7 +60,6 @@
       display:flex;
       align-items:center;
       gap:12px;
-      min-width: 200px;
     }
     .dot{
       width:12px;height:12px;border-radius:50%;
@@ -70,477 +69,263 @@
     .brand h1{
       font-size:16px;
       margin:0;
-      letter-spacing:.2px;
       font-weight:700;
     }
 
     nav{
       display:flex;
-      align-items:center;
       gap:10px;
       flex-wrap:wrap;
-      justify-content:flex-end;
     }
     .navlink{
       padding:8px 10px;
       border-radius:12px;
       color:var(--muted);
-      border:1px solid transparent;
     }
-    .navlink:hover{
-      color:var(--text);
-      border-color: rgba(255,255,255,.10);
-      background: rgba(255,255,255,.04);
-    }
+    .navlink:hover{ color:var(--text); }
 
     .btn{
       display:inline-flex;
       align-items:center;
-      justify-content:center;
       gap:10px;
       padding:11px 14px;
       border-radius:14px;
       border:1px solid rgba(255,255,255,.12);
       background: rgba(255,255,255,.05);
-      color:var(--text);
-      box-shadow: 0 10px 18px rgba(0,0,0,.28);
       font-weight:600;
-      letter-spacing:.15px;
-      cursor:pointer;
     }
-    .btn:hover{ background: rgba(255,255,255,.08); }
     .btn.primary{
       border-color: rgba(77,227,193,.35);
       background: linear-gradient(180deg, rgba(77,227,193,.22), rgba(77,227,193,.10));
     }
-    .btn.primary:hover{
-      background: linear-gradient(180deg, rgba(77,227,193,.28), rgba(77,227,193,.12));
-    }
 
-    /* Hero */
-    main{ padding: 36px 0 44px; }
+    main{ padding:36px 0 44px; }
+
     .hero{
       display:grid;
       grid-template-columns: 1.25fr .75fr;
-      gap: 22px;
-      align-items:stretch;
-      margin-top: 14px;
+      gap:22px;
+      margin-top:14px;
     }
     .heroCard{
       border:1px solid rgba(255,255,255,.10);
       background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.03));
       border-radius: var(--r);
       box-shadow: var(--shadow);
-      padding: 28px;
-      position:relative;
-      overflow:hidden;
+      padding:28px;
     }
-    .heroCard:before{
-      content:"";
-      position:absolute;
-      inset:-2px;
-      background:
-        radial-gradient(600px 240px at 20% 0%, rgba(77,227,193,.18), transparent 55%),
-        radial-gradient(600px 240px at 80% 0%, rgba(54,163,255,.16), transparent 55%);
-      pointer-events:none;
-    }
-    .heroInner{ position:relative; }
+
     .kicker{
       display:inline-flex;
-      align-items:center;
       gap:10px;
       padding:8px 12px;
-      border-radius: 999px;
+      border-radius:999px;
       border:1px solid rgba(255,255,255,.12);
-      background: rgba(0,0,0,.18);
-      color: var(--muted);
-      font-size: 13px;
+      color:var(--muted);
+      font-size:13px;
     }
-    .kicker b{ color:var(--text); font-weight:700; }
     .hero h2{
-      margin: 16px 0 12px;
-      font-size: clamp(30px, 4.3vw, 54px);
+      margin:16px 0 12px;
+      font-size: clamp(30px, 4.3vw, 52px);
       line-height:1.05;
-      letter-spacing:-.6px;
     }
     .sub{
-      margin:0;
-      color: var(--muted);
-      font-size: 16px;
-      line-height:1.55;
-      max-width: 60ch;
+      color:var(--muted);
+      font-size:16px;
+      max-width:60ch;
     }
     .ctaRow{
       display:flex;
       gap:12px;
+      margin-top:18px;
       flex-wrap:wrap;
-      margin-top: 18px;
     }
 
-    /* Side card */
     .sideCard{
       border:1px solid rgba(255,255,255,.10);
       background: rgba(255,255,255,.05);
       border-radius: var(--r);
-      padding: 22px;
-      box-shadow: 0 16px 34px rgba(0,0,0,.36);
+      padding:22px;
     }
     .sideCard h3{
-      margin: 0 0 10px;
-      font-size: 16px;
-      letter-spacing:.2px;
+      margin:0 0 10px;
+      font-size:16px;
     }
     .bullets{
-      margin: 0;
-      padding-left: 18px;
-      color: var(--muted);
-      line-height: 1.6;
-      font-size: 14px;
+      padding-left:18px;
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.6;
     }
     .mini{
-      margin-top: 14px;
-      padding-top: 14px;
-      border-top: 1px solid rgba(255,255,255,.08);
-      color: var(--muted2);
-      font-size: 13px;
-      line-height:1.55;
+      margin-top:14px;
+      padding-top:14px;
+      border-top:1px solid rgba(255,255,255,.08);
+      color:var(--muted2);
+      font-size:13px;
     }
 
-    /* Sections */
-    section{ padding: 22px 0; }
+    section{ padding:22px 0; }
     .sectionTitle{
-      font-size: 20px;
-      margin: 0 0 10px;
-      letter-spacing:.2px;
+      font-size:20px;
+      margin:0 0 10px;
     }
     .grid{
       display:grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
-      margin-top: 12px;
+      gap:14px;
+      margin-top:12px;
     }
     .card{
       border:1px solid rgba(255,255,255,.10);
       background: rgba(255,255,255,.04);
       border-radius: var(--r);
-      padding: 16px;
+      padding:16px;
     }
     .card h4{ margin:0 0 6px; font-size:15px; }
-    .card p{ margin:0; color:var(--muted); line-height:1.55; font-size:14px; }
+    .card p{ margin:0; color:var(--muted); font-size:14px; line-height:1.55; }
 
-    /* Contact */
     .contactCard{
       border:1px solid rgba(77,227,193,.18);
       background: linear-gradient(180deg, rgba(77,227,193,.10), rgba(255,255,255,.03));
       border-radius: var(--r);
-      padding: 18px;
+      padding:18px;
       display:flex;
-      align-items:center;
       justify-content:space-between;
-      gap: 12px;
+      gap:12px;
       flex-wrap:wrap;
     }
-    .contactText{
-      color: var(--muted);
-      line-height: 1.5;
-      font-size: 14px;
-    }
     .pill{
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      padding: 10px 12px;
-      border-radius: 999px;
+      padding:10px 14px;
+      border-radius:999px;
       border:1px solid rgba(255,255,255,.12);
       background: rgba(0,0,0,.22);
-      font-weight: 650;
-      letter-spacing:.2px;
+      font-weight:650;
     }
 
     footer{
-      padding: 22px 0 34px;
-      color: rgba(255,255,255,.45);
-      font-size: 12px;
-      border-top: 1px solid rgba(255,255,255,.06);
-      background: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,.25));
+      padding:22px 0 34px;
+      color:rgba(255,255,255,.45);
+      font-size:12px;
+      border-top:1px solid rgba(255,255,255,.06);
     }
 
-    /* Mobile */
-    @media (max-width: 860px){
-      .hero{ grid-template-columns: 1fr; }
-      .brand{ min-width:auto; }
-      nav{ gap:6px; }
-      .grid{ grid-template-columns: 1fr; }
-      main{ padding: 26px 0 32px; }
-      .heroCard{ padding: 22px; }
-=======
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Tec’s Books Bookkeeping | Bookkeeping for small businesses</title>
-  <meta name="description" content="Monthly bookkeeping, catch-up/cleanup, and QuickBooks support for small businesses. San Diego + remote." />
-  <meta name="theme-color" content="#111827" />
-
-  <!-- Social preview -->
-  <meta property="og:title" content="Tec’s Books Bookkeeping" />
-  <meta property="og:description" content="Bookkeeping that keeps you tax-ready every month." />
-  <meta property="og:type" content="website" />
-
-  <style>
-    :root {
-      --bg:#0b1220;
-      --text:#e5e7eb;
-      --muted:#a7b0c0;
-      --line:rgba(255,255,255,.10);
-      --accent:#5eead4;
-      --accent2:#60a5fa;
-      --radius:18px;
-      --max:1100px;
-    }
-
-    * { box-sizing:border-box }
-    html { scroll-behavior:smooth }
-
-    body {
-      margin:0;
-      font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
-      color:var(--text);
-      background:
-        radial-gradient(1000px 600px at 20% -10%, rgba(96,165,250,.25), transparent 60%),
-        radial-gradient(900px 600px at 90% 10%, rgba(94,234,212,.22), transparent 55%),
-        linear-gradient(180deg, var(--bg), #070b12 70%);
-    }
-
-    a { color:inherit; text-decoration:none }
-
-    .wrap { max-width:var(--max); margin:0 auto; padding:0 20px }
-
-    .nav {
-      position:sticky; top:0; z-index:10;
-      background:rgba(7,11,18,.75);
-      border-bottom:1px solid var(--line);
-    }
-
-    .navin {
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      padding:12px 0;
-      gap:16px;
-    }
-
-    .links { display:flex; gap:14px; flex-wrap:wrap }
-
-    .btn {
-      padding:10px 14px;
-      border-radius:12px;
-      border:1px solid var(--line);
-      background:rgba(255,255,255,.08);
-      cursor:pointer;
-    }
-
-    .btn.primary {
-      background:linear-gradient(135deg, rgba(94,234,212,.25), rgba(96,165,250,.25));
-    }
-
-    header { padding:60px 0 }
-
-    h1 { font-size:44px; line-height:1.1; margin:0 }
-    h2 { margin:10px 0 }
-    .sub { color:var(--muted); font-size:18px }
-
-    section { padding:40px 0 }
-
-    footer {
-      border-top:1px solid var(--line);
-      padding:30px 0;
-      color:var(--muted);
-      margin-top:40px;
->>>>>>> 3bf060c07525dd73404cc906e1ff15189169f6bd
+    @media (max-width:860px){
+      .hero{ grid-template-columns:1fr; }
+      .grid{ grid-template-columns:1fr; }
     }
   </style>
 </head>
 
 <body>
-<<<<<<< HEAD
-  <header>
-    <div class="wrap topbar">
-      <a class="brand" href="#top" aria-label="Tec’s Books Bookkeeping home">
-        <span class="dot" aria-hidden="true"></span>
-        <h1>Tec’s Books Bookkeeping</h1>
-      </a>
-
-      <nav aria-label="Primary navigation">
-        <a class="navlink" href="#services">Services</a>
-        <a class="navlink" href="#how">How it works</a>
-        <a class="navlink" href="#pricing">Pricing</a>
-        <a class="btn primary" href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="top">
-    <div class="wrap hero">
-      <div class="heroCard">
-        <div class="heroInner">
-          <span class="kicker"><b>San Diego</b> • Small business bookkeeping</span>
-          <h2>Bookkeeping that keeps you tax-ready every month.</h2>
-          <p class="sub">
-            Clean books, clear reports. Monthly bookkeeping, catch-up/cleanup, and QuickBooks support.
-          </p>
-
-          <div class="ctaRow">
-            <a class="btn primary" href="#contact">Get a quote</a>
-            <a class="btn" href="#services">See services</a>
-          </div>
-        </div>
-      </div>
-
-      <aside class="sideCard" aria-label="Quick highlights">
-        <h3>What you get</h3>
-        <ul class="bullets">
-          <li>Monthly categorization & reconciliation</li>
-          <li>Catch-up / cleanup for messy books</li>
-          <li>QuickBooks help (setup, fixes, questions)</li>
-        </ul>
-        <div class="mini">
-          No giant “enterprise” nonsense — just clear communication and books you can trust.
-        </div>
-      </aside>
-    </div>
-
-    <section id="services">
-      <div class="wrap">
-        <h3 class="sectionTitle">Services</h3>
-        <div class="grid">
-          <div class="card">
-            <h4>Monthly bookkeeping</h4>
-            <p>Ongoing bookkeeping to keep your books clean and current every month.</p>
-          </div>
-          <div class="card">
-            <h4>Catch-up & cleanup</h4>
-            <p>Behind on months? We can bring things up to date and fix weird categories.</p>
-          </div>
-          <div class="card">
-            <h4>QuickBooks support</h4>
-            <p>Setup help, troubleshooting, and answers when QuickBooks gets… creative.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="how">
-      <div class="wrap">
-        <h3 class="sectionTitle">How it works</h3>
-        <div class="grid">
-          <div class="card">
-            <h4>1) Quick chat</h4>
-            <p>Tell me what you do, what systems you use, and what’s driving you nuts.</p>
-          </div>
-          <div class="card">
-            <h4>2) Access & review</h4>
-            <p>We connect accounts (securely), review the current state, and set expectations.</p>
-          </div>
-          <div class="card">
-            <h4>3) Monthly rhythm</h4>
-            <p>Each month: reconcile, categorize, and deliver clean, readable reporting.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="pricing">
-      <div class="wrap">
-        <h3 class="sectionTitle">Pricing</h3>
-        <div class="grid">
-          <div class="card">
-            <h4>Starter</h4>
-            <p>Best for very small businesses with simple monthly activity.</p>
-          </div>
-          <div class="card">
-            <h4>Growth</h4>
-            <p>For businesses with more transactions, multiple accounts, or payroll tools.</p>
-          </div>
-          <div class="card">
-            <h4>Cleanup / Catch-up</h4>
-            <p>Quoted based on how many months need fixing and how messy things are.</p>
-          </div>
-        </div>
-        <p style="margin:12px 0 0; color: var(--muted2); font-size:13px; line-height:1.55;">
-          Exact pricing depends on transaction volume, number of accounts, and how far behind things are.
-          I’ll quote it fast after a quick overview.
-        </p>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="wrap">
-        <h3 class="sectionTitle">Contact</h3>
-        <div class="contactCard">
-          <div class="contactText">
-            Email works best for now. Tell me your business type + roughly how many transactions/month.
-          </div>
-          <a class="pill" href="mailto:info@tecsbooksbookkeeping.com">info@tecsbooksbookkeeping.com</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="wrap">© 2026 Tec’s Books Bookkeeping</div>
-  </footer>
-=======
-
-  <div class="nav">
-    <div class="wrap navin">
-      <strong>Tec’s Books Bookkeeping</strong>
-      <div class="links">
-        <a href="#services">Services</a>
-        <a href="#how">How it works</a>
-        <a href="#pricing">Pricing</a>
-        <a class="btn primary" href="#contact">Contact</a>
-      </div>
-    </div>
+<header>
+  <div class="wrap topbar">
+    <a class="brand" href="#top">
+      <span class="dot"></span>
+      <h1>Tecs Books Bookkeeping</h1>
+    </a>
+    <nav>
+      <a class="navlink" href="#services">Services</a>
+      <a class="navlink" href="#why">Why Us</a>
+      <a class="btn primary" href="#contact">Call or Contact</a>
+    </nav>
   </div>
+</header>
 
-  <header>
-    <div class="wrap">
-      <h1>Bookkeeping that keeps you tax-ready every month.</h1>
+<main id="top">
+  <div class="wrap hero">
+    <div class="heroCard">
+      <span class="kicker">San Diego • Small Business Bookkeeping</span>
+      <h2>Clear, reliable bookkeeping for small business owners who don’t want surprises.</h2>
       <p class="sub">
-        Clean books. Clear reports. Monthly bookkeeping, cleanup, and QuickBooks support.
+        We keep your books accurate, organized, and up to date—so you always know where your business stands and you’re ready for taxes without panic.
       </p>
-      <div style="margin-top:20px">
-        <a class="btn primary" href="#contact">Get a quote</a>
-        <a class="btn" href="#services">See services</a>
+      <div class="ctaRow">
+        <a class="btn primary" href="tel:6199162545">Call (619) 916-2545</a>
+        <a class="btn" href="#contact">Request a Quote</a>
       </div>
     </div>
-  </header>
+
+    <aside class="sideCard">
+      <h3>What clients come to us for</h3>
+      <ul class="bullets">
+        <li>Books that are accurate and consistently maintained</li>
+        <li>Someone who actually explains things in plain English</li>
+        <li>Confidence that nothing important is being missed</li>
+      </ul>
+      <div class="mini">
+        Serving San Diego businesses and remote clients across the U.S.
+      </div>
+    </aside>
+  </div>
 
   <section id="services">
     <div class="wrap">
-      <h2>Services</h2>
-      <p class="sub">Monthly bookkeeping, catch-up, and QuickBooks support.</p>
+      <h3 class="sectionTitle">Bookkeeping Services</h3>
+      <div class="grid">
+        <div class="card">
+          <h4>Monthly Bookkeeping</h4>
+          <p>
+            We categorize transactions, reconcile accounts, and keep your financials current each month so you always know where your money is going.
+          </p>
+        </div>
+        <div class="card">
+          <h4>Catch-Up & Cleanup</h4>
+          <p>
+            If your books are behind or messy, we untangle them, fix errors, and bring everything up to date without judgment.
+          </p>
+        </div>
+        <div class="card">
+          <h4>QuickBooks Support</h4>
+          <p>
+            Help with setup, fixes, and ongoing questions so QuickBooks works for you instead of causing stress.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="wrap">
+      <h3 class="sectionTitle">Why Choose Tecs Books Bookkeeping</h3>
+      <div class="grid">
+        <div class="card">
+          <h4>Accuracy First</h4>
+          <p>Your books are handled carefully and reviewed consistently so mistakes don’t quietly pile up.</p>
+        </div>
+        <div class="card">
+          <h4>Responsive & Reliable</h4>
+          <p>You get clear answers and timely communication—not radio silence when you have a question.</p>
+        </div>
+        <div class="card">
+          <h4>Confidential & Professional</h4>
+          <p>Your financial information is treated with discretion and handled securely at all times.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="contact">
     <div class="wrap">
-      <h2>Contact</h2>
-      <p class="sub">Email works best for now.</p>
-      <a class="btn primary" href="mailto:info@tecsbooksbookkeeping.com">
-        info@tecsbooksbookkeeping.com
-      </a>
+      <h3 class="sectionTitle">Talk With a Real Bookkeeper</h3>
+      <div class="contactCard">
+        <div>
+          <p class="sub">
+            A quick conversation is usually enough to see if we’re a good fit. No pressure, no sales script.
+          </p>
+        </div>
+        <a class="pill" href="mailto:info@tecsbooksbookkeeping.com">
+          info@tecsbooksbookkeeping.com
+        </a>
+      </div>
     </div>
   </section>
+</main>
 
-  <footer>
-    <div class="wrap">
-      © <span id="year"></span> Tec’s Books Bookkeeping
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-
->>>>>>> 3bf060c07525dd73404cc906e1ff15189169f6bd
+<footer>
+  <div class="wrap">
+    © 2026 Tecs Books Bookkeeping · San Diego, CA · Small Business Bookkeeping
+  </div>
+</footer>
 </body>
 </html>
